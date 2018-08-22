@@ -35,10 +35,12 @@ img {
     font-size: 60px;
 }
 #winCount {
+    color: aliceblue;
     font-size: 20px;
     text-align: center;
 }
 #lossCount {
+    color: aliceblue;
     font-size: 20px;
     text-align: center;
 }
