@@ -61,19 +61,24 @@ $(document).ready(function () {
         //resets the game and generates all new random numbers
         reset();
     }
+    function gameLogic() {
 
+        if (userTotal < targetNum) {
+            return;
+        }
+        else if (userTotal === targetNum) {
+            winner();
+        }
+        else loser();
+        
+    }
     // On click for the crystals... hopefully!
     $('#diamond').on('click', function () {
         userTotal = userTotal + ranNum1;
         console.log('New userTotal=' + userTotal);
         $('#userScore').text(userTotal);
         //win or loss conditions
-        if (userTotal === targetNum) {
-            winner();//call the alert and reset functions +1 to wins counter
-        }
-        else if (userTotal > targetNum) {
-            loser();//calls the alert and reset functions +1 to loss counter
-        }
+        gameLogic();
 
     });
 
@@ -82,12 +87,7 @@ $(document).ready(function () {
         console.log('New userTotal=' + userTotal);
         $('#userScore').text(userTotal);
         //win or loss conditions
-        if (userTotal === targetNum) {
-            winner();
-        }
-        else if (userTotal > targetNum) {
-            loser();
-        }
+        gameLogic();
     });
 
     $('#emerald').on('click', function () {
@@ -95,12 +95,7 @@ $(document).ready(function () {
         console.log('New userTotal=' + userTotal);
         $('#userScore').text(userTotal);
         //win or loss conditions
-        if (userTotal === targetNum) {
-            winner();
-        }
-        else if (userTotal > targetNum) {
-            loser();
-        }
+        gameLogic();
 
     });
 
@@ -109,12 +104,7 @@ $(document).ready(function () {
         console.log('New userTotal=' + userTotal);
         $('#userScore').text(userTotal);
         //win or loss conditions
-        if (userTotal === targetNum) {
-            winner();
-        }
-        else if (userTotal > targetNum) {
-            loser();
-        }
+        gameLogic();
 
     });
 
