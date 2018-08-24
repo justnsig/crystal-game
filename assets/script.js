@@ -48,16 +48,16 @@ $(document).ready(function () {
     // If the userTotal matches the targetNum games ends and shows alert
     function winner() {
         alert('You Win!!');
-       
-        $('#winCount').text(wins++);
+        wins++;
+        $('#winCount').text(wins);
         //resets the game and generates all new random numbers
         reset();
     }
     //if the user total exceeds the targetNum game ends and shows alert
     function loser() {
         alert('You lose');
-        
-        $('#lossCount').text(losses++);
+        losses++;
+        $('#lossCount').text(losses);
         //resets the game and generates all new random numbers
         reset();
     }
