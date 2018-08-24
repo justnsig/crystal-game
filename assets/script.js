@@ -22,8 +22,8 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0
     //adding text to the document
-    $('#winCount').text(wins);
-    $('#lossCount').text(losses);
+    $('#winCount').text("Win Count ",+ wins);
+    $('#lossCount').text("loss Count ",+ losses);
 
     function reset() {
         
@@ -48,16 +48,16 @@ $(document).ready(function () {
     // If the userTotal matches the targetNum games ends and shows alert
     function winner() {
         alert('You Win!!');
-        wins++;
-        $('#winCount').text(wins);
+       
+        $('#winCount').text(wins++);
         //resets the game and generates all new random numbers
         reset();
     }
     //if the user total exceeds the targetNum game ends and shows alert
     function loser() {
         alert('You lose');
-        losses++;
-        $('#lossCount').text(losses);
+        
+        $('#lossCount').text(losses++);
         //resets the game and generates all new random numbers
         reset();
     }
