@@ -1,6 +1,7 @@
 body {
     background-image: url(../assets/milky.jpeg);
 color: aliceblue;
+font-weight: 700;
 }
 
 #top {
@@ -31,13 +32,19 @@ img {
     text-align: center;
 }
 #winCount {
+    margin-left: 33px;
+    font-weight: 800;
+    padding: 6px;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 29px;
     text-align: center;
 }
 #lossCount {
+    margin-left: 35px;
+    font-weight: 800;
+    padding: 6px;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 31px;
     text-align: center;
 }
 

@@ -23,7 +23,7 @@ $(document).ready(function () {
     var losses = 0
     //adding text to the document
     $('#winCount').text('Win Count ' + wins);
-    $('#lossCount').text("loss Count " + losses);
+    $('#lossCount').text("loss Count  " + losses);
     $('#userScore').text(userTotal);
 
     function reset() {
