@@ -22,14 +22,12 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0
     //adding text to the document
-    $('#winCount').text("Win Count ",+ wins);
-    $('#lossCount').text("loss Count ",+ losses);
+    $('#winCount').text('Win Count ' + wins);
+    $('#lossCount').text("loss Count " + losses);
     $('#userScore').text(userTotal);
+
     function reset() {
-        
-        //What the hell? Only thing that doesnt reset is the targetNum
-        //Why doesnt the win or loss function run the second time through the game?
-        //new targetNum generates on the page but game doent use the new number
+
         targetNum = Math.floor(Math.random() * 120) + 19;
         console.log(targetNum);
         $('#score').text(targetNum);
@@ -48,7 +46,7 @@ $(document).ready(function () {
     function winner() {
         alert('You Win!!');
         wins++;
-        $('#winCount').text("Win Count ",+ wins);
+        $('#winCount').text("Win Count " + wins);
         //resets the game and generates all new random numbers
         reset();
     }
@@ -56,8 +54,7 @@ $(document).ready(function () {
     function loser() {
         alert('You lose');
         losses++;
-        $('#lossCount').text("loss Count ",+ losses);
-
+        $('#lossCount').text("loss Count " + losses);
         //resets the game and generates all new random numbers
         reset();
     }

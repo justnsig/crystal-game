@@ -1,3 +1,8 @@
+body {
+    background-image: url(../assets/milky.jpeg);
+color: aliceblue;
+}
+
 #top {
     text-align: center;
     height: 100px;
@@ -16,12 +21,6 @@
     height: 100px;
 }
 
-
-
-body {
-    background-image: url(../assets/milky.jpeg);
-color: aliceblue;
-}
 img {
     height: 90px;
     width: 150px;
