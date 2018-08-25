@@ -18,7 +18,6 @@ $(document).ready(function () {
     console.log(ranNum4);
 
     // variables
-    
     var userTotal = 0;
     var wins = 0;
     var losses = 0
