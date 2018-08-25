@@ -18,13 +18,14 @@ $(document).ready(function () {
     console.log(ranNum4);
 
     // variables
+    
     var userTotal = 0;
     var wins = 0;
     var losses = 0
     //adding text to the document
     $('#winCount').text("Win Count ",+ wins);
     $('#lossCount').text("loss Count ",+ losses);
-
+    $('#userScore').text(userTotal);
     function reset() {
         
         //What the hell? Only thing that doesnt reset is the targetNum
@@ -42,14 +43,13 @@ $(document).ready(function () {
         console.log(ranNum3);
         ranNum4 = Math.floor(Math.random() * 19) + 1;
         console.log(ranNum4);
-        
         $('#userScore').text(userTotal);
     }
     // If the userTotal matches the targetNum games ends and shows alert
     function winner() {
         alert('You Win!!');
         wins++;
-        $('#winCount').text(wins);
+        $('#winCount').text("Win Count ",+ wins);
         //resets the game and generates all new random numbers
         reset();
     }
@@ -57,7 +57,8 @@ $(document).ready(function () {
     function loser() {
         alert('You lose');
         losses++;
-        $('#lossCount').text(losses);
+        $('#lossCount').text("loss Count ",+ losses);
+
         //resets the game and generates all new random numbers
         reset();
     }
